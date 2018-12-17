@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  color: #222;
+  text-align: center;
+}
+div.container {
+  text-align: left;
+  display: inline-block;
+  width: 600px;
+}
+div.container div.content {
+  overflow: hidden;
+  width: 100%;
+
+}
+
+div.container nav, div.container footer {
+  min-height: 3.75rem;
+  display: block;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0.375rem 0;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+div.container nav a.logo {
+  float: left;
+  display: block;
+  height: 100%;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f91600;
+  text-decoration: none;
+}
+div.container nav ul {
+  float: right;
+  display: block;
+  height: 100%;
+  font-size: 0;
+}
+div.container nav ul a {
+  display: inline-block;
+  height: 100%;
+  line-height: 3rem;
+  font-size: 1.125rem;
+  margin-left: 1rem;
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+div.container nav ul a:hover {
+  color: #f91600;
+}
+
+div.container footer {
+  border: none;
+  margin: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 1.5rem;
+}
+div.container footer p {
+  display: block;
+  height: 100%;
+  line-height: 3rem;
+  font-size: 1.125rem;
+  clear: none;
+}
+div.container footer p.left {
+  float: left;
+}
+div.container footer p.right {
+  float: right;
+}
+
+@media (max-width: 625px) {
+  div.container {
+    width: calc(100% - 2rem);
+  }
+}
