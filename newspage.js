@@ -38,8 +38,7 @@ function addArticle(newsArticle){
   var className = "other";
   if(newsArticle.title && newsArticle.title.toLowerCase().indexOf("vodafone") != -1){
     className = "vodafoneTitle";
-  }
-  if(newsArticle.description && newsArticle.description.toLowerCase().indexOf("vodafone") != -1){
+  }else if(newsArticle.description && newsArticle.description.toLowerCase().indexOf("vodafone") != -1){
     className = "vodafoneDescription";
   }
   document.querySelector("div.content div." + className).innerHTML += `
