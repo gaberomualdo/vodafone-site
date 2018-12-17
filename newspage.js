@@ -1,9 +1,9 @@
 function formatDate(date) {
   var monthNames = [
-    "January", "February", "March",
-    "April", "May", "June", "July",
-    "August", "September", "October",
-    "November", "December"
+    "Jan", "Feb", "Mar",
+    "Apr", "May", "Jun", "Jul",
+    "Aug", "Sep", "Oct",
+    "Nov", "Dec"
   ];
 
   var day = date.getDate();
@@ -45,7 +45,7 @@ function addArticle(newsArticle){
   document.querySelector("div.content div." + className).innerHTML += `
   <a href="${newsArticle.url}" target="_blank" class="${no_image_class}" style='${has_image_style}'>
     ${image}
-    <div class='meta'>
+    <div class='meta_section'>
       <h1>${newsArticle.title}</h1>
       <p>${newsArticle.description}</p>
       <p class='meta'>By <strong>${newsArticle.source.name}</strong> on ${formatDate(new Date(newsArticle.publishedAt))}</p>
